@@ -7,11 +7,21 @@
 	"name": "atomide-dev",
 	"main": ".open-next/worker.js",
 	"compatibility_date": "2025-10-08",
-	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".open-next/assets"
 	},
+	"d1_databases": [
+		{
+			"binding": "ATOMIDE_DB",
+			"database_name": "atomide-dev-db",
+			"database_id": "ATOMIDE_DB"
+		}
+	],
 	"observability": {
 		"enabled": true
 	},

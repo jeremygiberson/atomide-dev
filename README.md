@@ -61,3 +61,21 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Database Migrations (Drizzle ORM + Cloudflare D1)
+
+**TL;DR**
+
+1.  **Define Model**: Add/Modify table in `src/db/schema.ts`.
+2.  **Generate Migration**:
+    ```bash
+    npx drizzle-kit generate
+    ```
+3.  **Apply Locally** (Development):
+    ```bash
+    npx wrangler d1 migrations apply ATOMIDE_DB --local
+    ```
+4.  **Apply in Production**:
+    ```bash
+    npx wrangler d1 migrations apply ATOMIDE_DB --remote
+    ```
