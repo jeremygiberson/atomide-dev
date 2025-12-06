@@ -8,6 +8,13 @@
       "when": 1764960640324,
       "tag": "0000_bitter_toad_men",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1765003044736,
+      "tag": "0001_hot_iron_monger",
+      "breakpoints": true
     }
   ]
 }
